@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 100% 168px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  font-family: "red Hat Text";
+  background: linear-gradient(
+    180deg,
+    #1d1e28 0.12%,
+    #261c2d 94.84%,
+    #261a2d 100%
+  );
+  min-height: 100vh;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+}
+
+.picture {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 168px;
+}
+
+h1 {
+  height: 48px;
+  width: 327px;
+  font-family: "Red Hat Text";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 6.1px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 54vh;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.countdown div {
+  margin: 10px;
+}
+.countdown p {
+  /* padding: 20px; */
+  background-color: #343650;
+  border-radius: 5px;
+  color: #fb5e84;
+  height: 66px;
+  width: 70px;
+  border-radius: 4px;
+  font-family: Red Hat Text;
+  font-size: 285%;
+}
+
+.countdown h3 {
+  color: #8385a9;
+  font-family: "Red Hat Text";
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 9px;
+  letter-spacing: 2.9px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 380px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+svg:hover path {
+  fill: #fb5e84;
+  cursor: pointer;
+}
+
+svg {
+  z-index: 1;
+}
+
+.picture-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .picture {
+    display: none;
+  }
+  .picture-desktop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 220px;
+  }
+
+  .countdown h3 {
+    height: 18px;
+    width: 148px;
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 5.9px;
+    text-align: center;
+  }
+
+  .countdown p {
+    height: 140px;
+    width: 148px;
+    border-radius: 8px;
+    font-size: 570%;
+  }
+
+  h1 {
+    height: 29px;
+    width: 431px;
+  }
+}
